@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name='viewport' content='width=device-width initial-scale=1'>
+		<title>Bouncing Loader</title>
+		<link rel="stylesheet" type="text/css" href="bounce.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="viewport">
+				<div class="tab">
+					<a href="#a_one">First</a> <a href="#a_two">Secode</a> <a href="#a_three">Three</a>
+					<div class="screen">
+						<section class="load-area" id='a_one'>
+							<div class="load-visible-area">
+								<div class="bounce-loader">
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+								<div class="info">
+									Loading...
+								</div>
+							</div>
+						</section>
+
+						<section class="load-area" id='a_two'>
+							<div class="load-visible-area">
+								<div class="bounce-loader">
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+								<div class="info">
+									Loading...
+								</div>
+							</div>
+						</section>
+
+						<section class="load-area" id='a_three'>
+							<div class="load-visible-area">
+								<div class="bounce-loader">
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+								<div class="info">
+									Loading...
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function delayBalls(t, balls){
+				x = document.querySelectorAll('.bounce-loader>div');
+				// t = .1
+				for(var i=0; i<x.length; i++){
+					var div = x[i];
+					div.style.animationDelay = t + 's';
+					t += t;
+				}
+			}
+			delayBalls(.1, )
+		</script>
+	</body>
+	
+</html>
